@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300;500;700&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=Caveat:wght@500;700&family=Cinzel:wght@400;600&family=Comfortaa:wght@300;400;500&family=Commissioner:wght@100;300;500;700&family=Inter:wght@100;300;500;700;900&family=Kumbh+Sans:wght@300;500&family=Lato:wght@300;400;900&family=Lexend:wght@200;300;400&family=Martian+Mono:wght@100;300;500;700&family=Open+Sans&family=Orbitron:wght@400;500;600&family=Poppins:wght@300;500;700;900&family=Raleway:wght@100;200;300;400;500;700;900&family=Saira:wght@100;200;300;400;500&display=swap");
+.title, #cars-sec h1, #slogan h2, #slogan h1, .design p, #exterior p, #interior p, .design h1, #exterior h1, #interior h1 {
+  font-family: "Bitter", serif;
+  white-space: nowrap;
+}
+
+.design, #exterior, #interior {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+.design h1, #exterior h1, #interior h1 {
+  font-size: 30px;
+}
+.design p, #exterior p, #interior p {
+  font-size: 12px;
+  font-weight: 200;
+  max-width: 500px;
+  text-align: center;
+}
+.design button, #exterior button, #interior button {
+  color: #fff;
+  padding: 20px 50px;
+  font-weight: 700;
+  background-color: transparent;
+  letter-spacing: 3px;
+  border: 2px solid #fff;
+  transition: background-color 0.5s ease;
+}
+.design button:hover, #exterior button:hover, #interior button:hover {
+  background-color: #e22e2e;
+  transition: all 0.5s ease;
+  color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eaeaea;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Kumbh Sans", sans-serif;
+  color: #000;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+}
+header nav a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.5s, text-shadow 0.5s;
+  white-space: nowrap;
+}
+header nav a:hover {
+  color: #e22e2e !important;
+  text-shadow: 2px 2px 10px #e22e2e;
+  transition: all 0.5s;
+}
+header #nav-left img {
+  max-width: 50px;
+}
+header #nav-left a {
+  font-size: 15px;
+  font-weight: 600;
+  border-right: 1px solid;
+  padding: 0 10px;
+}
+header #nav-right a {
+  font-size: 15px;
+  color: #808080;
+  padding: 0 10px;
+}
+
+.hero {
+  min-height: calc(100vh - 76px);
+  display: flex;
+  padding: 50px;
+  background: linear-gradient(to top, #cacaca 60%, #9c9c9c 40%);
+}
+@media (max-width: 800px) {
+  .hero {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 300px) {
+  .hero {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+#slogan {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  align-items: center;
+  gap: 50px;
+}
+#slogan h1 {
+  font-size: 30px;
+}
+#slogan p {
+  font-family: "Bitter", serif;
+  text-align: center;
+  font-size: 13px;
+}
+#slogan img {
+  max-width: 200px;
+  mix-blend-mode: darken;
+}
+#slogan h2 {
+  font-size: 20px;
+}
+#slogan button {
+  background-color: #e22e2e;
+  padding: 10px 50px;
+  border: none;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 3px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+}
+#slogan button:hover {
+  background-color: red;
+  transition: all 0.5s;
+}
+
+#images {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+#images-main {
+  max-width: 700px;
+}
+@media (max-width: 1000px) {
+  #images-main {
+    max-width: 500px;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  #images-main {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 300px) {
+  #images-main {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+#images-second {
+  max-width: 400px;
+  mix-blend-mode: darken;
+}
+#images p {
+  max-width: 500px;
+  text-align: center;
+}
+
+#interior {
+  border: 2px solid red;
+  background: radial-gradient(circle, transparent, #000), url(/images/interior.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#exterior {
+  background: radial-gradient(circle, transparent, #000), url(/images/exterior-4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#cars-sec {
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+@media (max-width: 300px) {
+  #cars-sec {
+    width: 100px;
+    gap: 10px;
+  }
+}
+@media (max-width: 800px) {
+  #cars-sec {
+    width: 250px;
+    gap: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  #cars-sec {
+    max-width: auto;
+    flex-direction: column;
+  }
+}
+#cars-sec h1 {
+  text-align: center;
+}
+#cars-sec .cars {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+  gap: 50px;
+}
+#cars-sec .cars-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#cars-sec .cars-card img {
+  width: 100%;
+  mix-blend-mode: darken;
+}
+#cars-sec .cars-card h4 {
+  font-family: "Bitter", serif;
+  text-align: center;
+  white-space: nowrap;
+}
+#cars-sec button {
+  background-color: #6262ff;
+  margin: 0 auto;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+#cars-sec button:hover {
+  background-color: #2727ca;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+footer {
+  background-color: #000;
+  display: flex;
+  gap: 50px;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+}
+footer img {
+  max-width: 200px;
+  margin-bottom: 60px;
+}
+footer p {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
